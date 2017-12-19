@@ -31,6 +31,6 @@ function coffeeBig() {
 }
 
 module.exports = {
-    small: coffeeSmall(),
-    big: coffeeBig()
-}
+    small: coffeeSmall,
+    big: coffeeBig
+};
