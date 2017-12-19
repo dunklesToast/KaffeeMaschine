@@ -1,6 +1,6 @@
 const wpi = require('wiring-pi');
-wpi.pinMode(20, OUTPUT);
-wpi.pinMode(21, OUTPUT);
+wpi.pinMode(20, wpi.OUTPUT);
+wpi.pinMode(21, wpi.OUTPUT);
 
 function coffeeSmall() {
     return new Promise((resolve, reject) => {
