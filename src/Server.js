@@ -12,7 +12,7 @@ app.get('/make/:size', function(req, res) {
         });
     } else if(req.params.size === "small"){
         make.small().then(() => {
-            res.json({size: "big", status: "started"});
+            res.json({size: "small", status: "started"});
         });
     } else {
         res.status(404).json({err: "size " + req.params.size + " not found"})
