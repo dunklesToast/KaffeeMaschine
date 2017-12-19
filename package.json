@@ -1,0 +1,9 @@
+{
+  "name": "KaffeeMaschine",
+  "version": "0.2",
+  "description": "Script um Kaffeemaschine zu automatisieren",
+  "main": "src/Server.js",
+  "author": "Tom Sacher, Kayra Karakas",
+  "license": "MIT",
+  "private": false
+}
