@@ -1,8 +1,9 @@
 const express = require('express');
 const make = require('./Make');
 const app = express();
+const path = require('path');
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname + '/public')));
 
 app.get('/make/:size', function(req, res) {
     if(req.params.size === "big"){
