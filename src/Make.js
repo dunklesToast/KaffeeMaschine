@@ -4,11 +4,11 @@ wpi.pinMode(21, wpi.OUTPUT);
 
 function coffeeSmall() {
     return new Promise((resolve, reject) => {
-        wpi.digitalWrite(20, wpi.LOW);
+        wpi.digitalWrite(20, 0);
         setTimeout(function () {
-            wpi.digitalWrite(20, wpi.HIGH);
+            wpi.digitalWrite(20, 1);
             setTimeout(function () {
-                wpi.digitalWrite(20, wpi.LOW);
+                wpi.digitalWrite(20, 0);
                 resolve();
             }, 500);
         }, 500);
@@ -19,11 +19,11 @@ function coffeeSmall() {
 //Big Coffee
 function coffeeBig() {
     return new Promise((resolve, reject) => {
-        wpi.digitalWrite(21, wpi.LOW);
+        wpi.digitalWrite(21, 0);
         setTimeout(function () {
-            wpi.digitalWrite(21, wpi.HIGH);
+            wpi.digitalWrite(21, 1);
             setTimeout(function () {
-                wpi.digitalWrite(21, wpi.LOW);
+                wpi.digitalWrite(21, 0);
                 resolve();
             }, 500);
         }, 500);
